@@ -1,0 +1,117 @@
+:root{
+    --background-color: #454443;
+    --heading-color: #f5d316;
+    --text-color: #f56f16;
+    --text-lr-margin: 150px;
+    --heading-lr-margin: 50px;
+    --heading-tb-margin: 50px;
+    --heading-font-family: "UNicod", "monospace";
+    --text-font-family: "Times New Roman", "monospace";
+}
+
+
+body{
+    /* background-color: var(--background-color); */
+    background-image: url(../images/background.svg);
+    background-size: 150px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+h1{
+    color: var(--heading-color);
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-family: var(--heading-font-family);
+    font-weight: 900;
+    font-size: 3.9em;
+}
+
+h2{
+    color: var(--heading-color);
+    /* border-bottom: 2px solid var(--heading-color); */
+    margin-left: var(--heading-lr-margin);
+    margin-right: var(--heading-lr-margin);
+    margin-top: var(--heading-tb-margin);
+    margin-bottom: var(--heading-tb-margin);
+    font-family: var(--heading-font-family);
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.text{
+    color: var(--text-color);
+    margin-left: var(--text-lr-margin);
+    margin-right: var(--text-lr-margin);
+    text-align:  justify;
+    font-family: var(--text-font-family);
+    font-size: 1.5em;
+}
+
+.heading{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.banner{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: right;
+}
+
+.banner-content{
+    display: inline;
+    top: 15px;
+    margin-right: 71px;
+}
+
+.banner p{
+    display: inline;
+    color: var(--text-color);
+    font-family: var(--heading-font-family);
+    font-size: 1.5em;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+.banner img{
+    display: inline;
+    width: 30px;
+    vertical-align: middle;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: 50px;
+}
+
+/* Show the dropdown menu on hover */
+.banner-content:hover .dropdown-content {display: block;}
+
+.dropdown-container1 {
+    margin-top: 15px;
+    margin-bottom: 18px;
+    margin-right: 47px;
+}
+
+.dropdown-container2 {
+    margin-top: 15px;
+    margin-bottom: 18px;
+    margin-right: 22px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: var(--text-color);
+    font-family: var(--heading-font-family);
+    font-size: 1.2em;
+    vertical-align: middle;
+}
