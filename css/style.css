@@ -1,108 +1,141 @@
-:root{
+:root {
     --background-color: #454443;
     --heading-color: #f5d316;
     --text-color: #f56f16;
-    --text-lr-margin: 150px;
+    --text-lr-margin: 200px;
     --heading-lr-margin: 50px;
     --heading-tb-margin: 50px;
     --heading-font-family: "UNicod", "monospace";
     --text-font-family: "Times New Roman", "monospace";
+    --menu-background-color: rgba(39, 39, 39, 0.8);
 }
 
-
-body{
-    /* background-color: var(--background-color); */
+body {
     background-image: url(../images/background.svg);
     background-size: 150px;
     margin-left: 0px;
     margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-h1{
+h1 {
     color: var(--heading-color);
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 30px;
-    padding-bottom: 5px;
+    padding-bottom: 50px;
     font-family: var(--heading-font-family);
     font-weight: 900;
     font-size: 3.9em;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-h2{
-    color: var(--heading-color);
-    /* border-bottom: 2px solid var(--heading-color); */
-    margin-left: var(--heading-lr-margin);
-    margin-right: var(--heading-lr-margin);
-    margin-top: var(--heading-tb-margin);
-    margin-bottom: var(--heading-tb-margin);
-    font-family: var(--heading-font-family);
-    font-weight: 900;
-    font-size: 3em;
-}
-
-.text{
+.text {
     color: var(--text-color);
     margin-left: var(--text-lr-margin);
     margin-right: var(--text-lr-margin);
-    text-align:  justify;
+    text-align: justify;
     font-family: var(--text-font-family);
     font-size: 1.5em;
 }
 
-.heading{
-    display: flex;
-    justify-content: flex-start;
+a {
+    color: var(--text-color);
+    font-family: var(--text-font-family);
 }
 
-.banner{
+table {
+    color: var(--text-color);
+    font-family: var(--text-font-family);
+    font-size: 1em;
+}
+
+td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.banner {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0px;
-    padding-top: 15px;
     padding-bottom: 15px;
-    text-align: right;
+    padding-top: 15px;
+    background-color: var(--menu-background-color);
 }
 
-.banner-content{
-    display: inline;
-    top: 15px;
-    margin-right: 71px;
-}
-
-.banner p{
+p#page-head{
     display: inline;
     color: var(--text-color);
     font-family: var(--heading-font-family);
     font-size: 1.5em;
-    padding-right: 20px;
+    vertical-align: middle;
+    padding-left: 97px;
+
+}
+
+#menu{
+    display: inline;
+    color: var(--text-color);
+    font-family: var(--heading-font-family);
+    font-size: 1em;
+    vertical-align: middle;
+    position: absolute;
+    right: 97px;
+
+}
+
+.banner p {
+    display: inline;
+    color: var(--text-color);
+    font-family: var(--heading-font-family);
+    font-size: 1.5em;
     vertical-align: middle;
 }
 
-.banner img{
+.banner img {
     display: inline;
     width: 30px;
     vertical-align: middle;
 }
 
+.banner-content {
+    display: inline;
+    top: 15px;
+    padding-right: 71px;
+    position: absolute;
+    right: 50px;
+}
+
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  right: 50px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-right: 75px;
+    right: 0px;
+    top: 58;
+    width: 100%;
+    min-height: 200px;
+    background-color: var(--menu-background-color);
+    text-align: right;
 }
 
 /* Show the dropdown menu on hover */
-.banner-content:hover .dropdown-content {display: block;}
+.banner:hover .dropdown-content {
+    display: block;
+}
 
-.dropdown-container1 {
+.dropdown-container:nth-of-type(odd) {
     margin-top: 15px;
     margin-bottom: 18px;
     margin-right: 47px;
 }
 
-.dropdown-container2 {
+.dropdown-container:nth-of-type(even) {
     margin-top: 15px;
     margin-bottom: 18px;
     margin-right: 22px;
@@ -114,4 +147,42 @@ h2{
     font-family: var(--heading-font-family);
     font-size: 1.2em;
     vertical-align: middle;
+}
+
+.heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 102px;
+    vertical-align: middle;
+}
+
+img.heading{
+    display:inline;
+    width:30px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+h2.heading {
+    display:inline;
+    color: var(--heading-color);
+    font-family: var(--heading-font-family);
+    font-weight: 900;
+    font-size: 3em;
+    padding-left: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+a#bottom-banner{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    position: absolute;
+    right: 100px;
+    color: var(--text-color);
+    font-family: var(--heading-font-family);
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
 }
