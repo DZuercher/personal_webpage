@@ -2,7 +2,7 @@
     --background-color: #454443;
     --heading-color: #f5d316;
     --text-color: #f56f16;
-    --text-lr-margin: 200px;
+    --text-lr-margin: 150px;
     --heading-lr-margin: 50px;
     --heading-tb-margin: 50px;
     --heading-font-family: "UNicod", "monospace";
@@ -27,7 +27,7 @@ h1 {
     padding-bottom: 50px;
     font-family: var(--heading-font-family);
     font-weight: 900;
-    font-size: 3.9em;
+    font-size: 3em;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -156,7 +156,7 @@ p#page-head{
     vertical-align: middle;
 }
 
-img.heading{
+img.heading-content {
     display:inline;
     width:30px;
     padding-left: 0px;
@@ -164,12 +164,12 @@ img.heading{
     padding-bottom: 0px;
 }
 
-h2.heading {
+h2.heading-content {
     display:inline;
     color: var(--heading-color);
     font-family: var(--heading-font-family);
     font-weight: 900;
-    font-size: 3em;
+    font-size: 2em;
     padding-left: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -185,4 +185,36 @@ a#bottom-banner{
     font-size: 1.2em;
     text-align: center;
     text-decoration: none;
+}
+
+.paper {
+    overflow : hidden; /* avoids that container has 0 height if floating children*/
+    color: var(--text-color);
+    margin-left: var(--text-lr-margin);
+    margin-right: var(--text-lr-margin);
+    text-align: justify;
+    font-family: var(--text-font-family);
+    font-size: 1.2em;
+}
+
+.paper img{
+    width:30%;
+    float:left;
+}
+
+.paper-text {
+    float:left;
+    width: 65%;
+    margin-left:30px;
+    margin-top: 0px;
+}
+
+.authors {
+    color: var(--heading-color);
+    font-size: 1.3em;
+}
+
+table p {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }

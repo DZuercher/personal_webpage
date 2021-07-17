@@ -1,45 +1,203 @@
 <head>
+    <title>Dominik Z&uumlrcher's Personal Webpage</title>
+    <link rel="icon" href="../images/yellow_hex.svg">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/utils.js"></script>
+    <!-- load jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- for emojis -->
+    <meta charset=“UTF-8”>
 </head>
 
 <body>
-    <h1>Just things I like</h1>
+    <a id="top"></a>
+    <!-- Banner at the top -->
     <div class="banner">
-        <div id="page-id" style="display:inline; margin-right: 1100px">
-            <p> Just things I like </p>
-        </div>
-        <div class="banner-content">
+        <p id="page-head">
+            Dominik Z&uumlrcher's Personal Webpage - Research/Publications
+        </p>
+        <div id="menu">
             <p>Menu</p>
             <img src="../images/orange_hex.svg">
-            <div class="dropdown-content">
-                <div class="dropdown-container1">
-                    <a href="index.html">Home</a>
-                    <img src="../images/yellow_hex.svg">
-                </div>
-                <div class="dropdown-container2">
-                    <a href="html/Research.html">Research</a>
-                    <img src="../images/yellow_hex.svg">
-                </div>
-                <div class="dropdown-container1">
-                    <a href="html/Projects.html">Coding Projects</a>
-                    <img src="../images/yellow_hex.svg">
-                </div>
-                <div class="dropdown-container2">
-                    <a href="html/Like.html">Things I like</a>
-                    <img src="../images/yellow_hex.svg">
-                </div>
+        </div>
+        <div class="dropdown-content">
+            <div class="dropdown-container">
+                <a href="../index.html">Home</a>
+                <img src="../images/yellow_hex.svg">
+            </div>
+            <div class="dropdown-container">
+                <a href="Research.html">Research/Publications</a>
+                <img src="../images/yellow_hex.svg">
+            </div>
+            <div class="dropdown-container">
+                <a href="Projects.html">Programming</a>
+                <img src="../images/yellow_hex.svg">
+            </div>
+            <div class="dropdown-container">
+                <a href="CV.html">CV</a>
+                <img src="../images/yellow_hex.svg">
             </div>
         </div>
     </div>
 
-    <div class="text">Some introduction stuff and contact</div>
+    <h1>Research / Publications</h1>
 
-    <div class="heading">
-        <img src="../images/yellow_hex.svg" style="width:30px; padding-left:51">
-        <h2>Research interests</h2>
+    <div class="text">
+        <p>In my PhD research I am working on increasing the amount of cosmological
+        information that can be extracted from cosmic shear data. I study the use of higher-order
+        mass map statistics sensitive to non-Gaussian information of the mass maps that is complementary
+        to the Gaussian information commonly extracted using two-point summary statistics.
+        Using a forward-modelling approach I avoid the need to predict higher-order statistics from theory
+        for different cosmologies, which often requires to rely on approximations. </p>
+        <p><a href="https://orcid.org/0000-0002-9240-1826">Orcid ID: 0000-0002-9240-1826</a></p>
     </div>
-    <div class="text">Some stuff</div>
+
+    <div class="heading" style="padding-top:45px">
+        <img class="heading-content" src="../images/yellow_hex.svg">
+        <h2 class="heading-content">Cosmological forecast for non-Gaussian statistics in large-scale weak lensing surveys</h2>
+    </div>
+
+    <div class="paper">
+        <p style="font-weight:900; margin-top: 0px">
+            Journal of Cosmology and Astroparticle Physics 2021.01 (2021): 028.
+            <a href="https://arxiv.org/abs/2006.12506">arXiv Link</a>
+        </p>
+        <p class="authors"><span style="font-weight:900">
+            Authors:</span>
+            Dominik Z&uumlrcher, Janis Fluri, Raphael Sgier, Tomasz Kacprzak
+            and Alexandre Refregier
+        </p>
+        <img src="../images/forecast.png">
+        <p class="paper-text">
+            <span style="font-weight:900">Abstract:</span>
+            Cosmic shear data contains a large amount of cosmological information
+            encapsulated in the non-Gaussian features of the weak lensing mass maps.
+            Weak lensing studiesmostly rely on two-point statistics to constrain
+            cosmology from cosmic shear data, that do not capture all of this
+            information. Additional non-Gaussian information can be extracted
+            using non-Gaussian statistics. We compare the constraining power
+            in the Ωm–σ8 plane ofthree map-based non-Gaussian statistics with the
+            angular power spectrum, namely; peakcounts, minimum counts and
+            Minkowski functionals. We further analyze the impact of to-mography
+            and systematic effects originating from galaxy intrinsic alignments,
+            multiplicativeshear bias and photometric redshift systematics.
+            We forecast the performance of the statisticsfor a stage-3-like weak
+            lensing survey, spanning an area of 5000 deg2 and restrict ourselves
+            to scales ≥ 10 arcmin to avoid baryonic effects.
+            The study follows a forward modelling scheme to predict the statistics
+            at different cosmologies based on N-Body simulations. We find, that in
+            our setup, the considered non-Gaussian statistics provide tighter
+            constraints thanthe angular power spectrum. The peak counts show the
+            greatest potential, increasing thefigure-of-Merit (FoM) in the
+            Ωm–σ8plane by a factor of about 6, while the minimum counts and the
+            Minkowski functionals yield an increase by a factor of about 3 and 2,
+            respectively. A combined analysis using all non-Gaussian statistics
+            in addition to the power spectrum increases the FoM by a factor of 9
+            and reduces the error on S<sub>8</sub> by ≈30%. We find that the importance of
+            tomography is diminished when combining non-Gaussian statistics with
+            the angular power spectrum. The non-Gaussian statistics indeed profit
+            less from tomography and the minimum counts and Minkowski functionals
+            add some robustness against galaxy intrinsic alignment in a
+            non-tomographic setting. We further find that a combination of the
+            angular power spectrum and the non-Gaussian statistics allows us to
+            apply conservative scale cuts in the analysis, thus helping to
+            minimize the impact of baryonic and relativistic effects, while
+            conserving the cosmological constraining power. We make the code that
+            was used to conduct this analysis publicly available to simplify
+            performing such analyses in the future.
+        </p>
+    </div>
+
+    <div class="heading" style="padding-top:47px">
+        <img class="heading-content" src="../images/yellow_hex.svg">
+        <h2 class="heading-content">The Splashback Radius of Planck SZ Clusters</h2>
+    </div>
+
+    <div class="paper">
+        <p style="font-weight:900; margin-top: 0px">
+            The Astrophysical Journal 874.2 (2019): 184.
+            <a href="https://arxiv.org/abs/1811.06511">arXiv Link</a>
+        </p>
+        <p class="authors"><span style="font-weight:900">
+            Authors:</span>
+            Dominik Z&uumlrcher and Surhud More
+        </p>
+        <img src="../images/splashback.png">
+        <p class="paper-text">
+            <span style="font-weight:900">Abstract:</span>
+            We present evidence for the existence of the splashback radius in galaxy
+            clusters selected using the Sunyaev–Zeldovich effect, a sample unaffected
+            by systematics related to cluster finding in the optical wavelength range.
+            We show that the deprojected cross-correlation of galaxy clusters found
+            in the Planck survey with galaxies detected photometrically in the Pan-STARRS
+            survey shows a sharp steepening feature (a logarithmic slope steeper than−3),
+            which we associate with the splashback radius. We infer the 3D splashback radius
+            for the SZ cluster sample to be r<sub>sp</sub> =
+            1.85<sub>-0.30</sub><sup>+0.26</sup> h<sup>-1</sup> Mpc, where the cluster
+            sample has an average halo mass of M<sub>500c</sub> = 3.0 × 10<sup>14</sup>
+            h<sup>-1</sup> M<sub>sol</sub> at an average
+            redshift of z = 0.18. The inferred value of the splashback radius appears
+            marginally consistent with the expected location for dark matter halos in
+            the standard cold dark matter paradigm. However, given the limited
+            precision of our measurements, we cannot conclusively confirm or rule out the
+            smaller splashback radius measured so far in the literature for optically
+            selected galaxy clusters. We show that the splashback radius does not depend
+            on the galaxy magnitude for galaxies fainter than M<sub>i</sub> - 5 log(h) = -19.44
+            and is present at a consistent location ingalaxy populations divided by color.
+            The presence of the splashback radius in the star-forming galaxy population
+            could potentially be used to put lower limits on the quenching time scales for galaxies.
+            We can marginally rule outthe contamination of the star-forming galaxy sample
+            by quenched galaxies, but the results would need further verification with deeper data sets.
+        </p>
+    </div>
+
+    <div class="heading" style="padding-top:57px">
+        <img class="heading-content" src="../images/yellow_hex.svg">
+        <h2 class="heading-content">Spectro-imaging forward model of red and blue galaxies</h2>
+    </div>
+
+    <div class="paper">
+        <p style="font-weight:900; margin-top: 0px">
+            The Astrophysical Journal 874.2 (2019): 184.
+            <a href="https://arxiv.org/abs/2002.04039">arXiv Link</a>
+        </p>
+        <p class="authors"><span style="font-weight:900">
+            Authors:</span>
+            Martina Fagioli, Luca Tortorelli, J&oumlrg Herbel,
+            Dominik Z&uumlrcher, Alexandre Refregier and Adam Amara
+        </p>
+        <img src="../images/spectro.png">
+        <p class="paper-text">
+            <span style="font-weight:900">Abstract:</span>
+            For the next generation of spectroscopic galaxy surveys, it is important
+            to forecast their performances and to accurately interpret their large data sets.
+            For this purpose, it is necessary to consistently simulate different populations
+            of galaxies, in particular Emission Line Galaxies (ELGs), less used in the past for
+            cosmological purposes. In this work, we further the forward modeling approach
+            presented in Fagioli et al. 2018, by extending thespectra simulator Uspec to model
+            galaxies of different kinds with improved parameters from Tortorelli et al. 2020.
+            Furthermore, we improve the modeling of the selection function byusing the image simulator
+            Ufig. We apply this to the Sloan Digital Sky Survey (SDSS), and simulate ∼157,000 multi-band images.
+            We pre-process and analyse them to apply cuts for target selection, and finally simulate
+            SDSS/BOSS DR14 galaxy spectra. We compute photometric, astrometric and spectroscopic properties
+            for red and blue, real and simulated galaxies, finding very good agreement.
+            We compare the statistical properties of the samples by decomposing them with Principal Component Analysis (PCA).
+            We find very good agree-ment for red galaxies and a good, but less pronounced one, for blue galaxies,
+            as expected given the known difficulty of simulating those. Finally, we derive stellar
+            population properties, mass-to-light ratios, ages and metallicities,
+            for all samples, finding again very good agreement. This shows how this method can be used
+            not only to forecast cosmology surveys, but it is also able to provide insights into
+            studies of galaxy formation and evolution.
+    </p>
+    </div>
+
+    <a id="bottom-banner" href="#top">
+        <p style="margin-bottom: 0px; font-size: 2em">&#x2191</p>
+        <p style="margin-bottom: 0px; margin-top: 0px">Back to top</p>
+    </a>
 </body>
+
+<!-- load script at bottom after all html objects created -->
+<script src="../js/utils.js"></script>

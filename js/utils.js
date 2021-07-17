@@ -1,3 +1,27 @@
+// execute some jQuery code after document is fully loaded
+// $(document).ready(function(){
+//     let offset = 0;
+//     let hex_height = 26.55;
+//     // adjust position of headings such that they align with the background
+//     $('.heading').each(function(){
+//         var position = $(this).offset().top;
+//         var pad = parseInt($(this).css('paddingTop'));
+//         position += pad;
+//         position += offset;
+//
+//         var ip = 0;
+//         while (ip <= position){
+//            ip += 2 * hex_height;
+//         }
+//         var shift = ip - position;
+//         offset += shift;
+//         console.log(position, ip, shift, pad);
+//         $(this).css('paddingTop', pad + shift);
+//         // location.reload();
+//     }
+//     );
+// });
+
 // document.addEventListener("scroll", scrolled_banner);
 
 // let banner = document.getElementsByClassName("banner")[0];
@@ -7,6 +31,7 @@
 // let menu = document.getElementById("menu");
 // menu.addEventListener("mouseenter", entered_banner);
 // menu.addEventListener("mouseleave", left_banner);
+
 
 function scrolled_banner(){
     // Changes color of banner if scrolled down over banner
