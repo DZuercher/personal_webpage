@@ -20,6 +20,10 @@
     --paper-font-size: 0.75rem;
 }
 
+body {
+    background-color: var(--background-color);
+}
+
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
     :root {
@@ -27,6 +31,9 @@
     --text-font-size: 1rem;
     --heading-font-size: 1.25rem;
     --paper-font-size: 1rem;
+    }
+    body {
+        background-color: var(--background-color);
     }
 }
 
@@ -38,6 +45,9 @@
     --heading-font-size: 2rem;
     --paper-font-size: 1.25rem;
     }
+    body {
+        background-color: var(--background-color);
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -47,6 +57,14 @@
     --text-font-size: 1.5rem;
     --heading-font-size: 2rem;
     --paper-font-size: 1.25rem;
+    }
+    body {
+        background-image: url(../images/background.svg);
+        background-size: 10vw;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
 
@@ -58,16 +76,17 @@
     --heading-font-size: 2.5rem;
     --paper-font-size: 1.5rem;
     }
+
+    body {
+        background-image: url(../images/background.svg);
+        background-size: 10vw;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
 
-body {
-    background-image: url(../images/background.svg);
-    background-size: 12vw;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
 
 h1 {
     color: var(--heading-color);
@@ -123,7 +142,6 @@ p#page-head{
     color: var(--text-color);
     font-family: var(--heading-font-family);
     font-size: var(--text-font-size);
-    vertical-align: middle;
     padding-left: var(--text-lr-padding);
 
 }
@@ -133,7 +151,6 @@ p#page-head{
     color: var(--text-color);
     font-family: var(--heading-font-family);
     font-size: var(--text-font-size);
-    vertical-align: middle;
     position: absolute;
     right: var(--text-lr-padding);
 
