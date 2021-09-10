@@ -87,6 +87,14 @@ body {
     }
 }
 
+sub {
+    z-index: -1;
+}
+
+sup {
+    z-index: -1;
+}
+
 
 h1 {
     color: var(--heading-color);
@@ -205,6 +213,7 @@ p#page-head{
     font-family: var(--heading-font-family);
     font-size: var(--text-font-size);
     vertical-align: middle;
+    text-decoration: none;
 }
 
 .heading {
