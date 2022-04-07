@@ -306,3 +306,7 @@ a {
     font-family: var(--text-font-family);
     text-decoration: underline;
 }
+
+.supsub {position: absolute}
+.subscript {display:block; position:relative; left:2px; top: -5px}
+.superscript {display:block; position:relative; left:2px; top: -5px}
