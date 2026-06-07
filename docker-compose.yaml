@@ -2,6 +2,7 @@ services:
   webserver:
       container_name: apache_webserver
       image: httpd:latest
+      hostname: dominikzuercher.ch
       ports:
         - 80:80
       volumes:
